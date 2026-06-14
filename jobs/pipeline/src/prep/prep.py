@@ -37,7 +37,7 @@ for filename in arr:
 df = pd.concat(df)
 
 # Now you can split the DataFrame into train and test sets
-train_df, test_df = train_test_split(df, test_size=0.3, random_state=4)
+train_df, test_df = train_test_split(df, test_size=0.25, random_state=4)
 
 # Save the train and test DataFrames to CSV files
 train_df.to_csv((Path(args.train_data) / "train_data.csv"), index=False)
